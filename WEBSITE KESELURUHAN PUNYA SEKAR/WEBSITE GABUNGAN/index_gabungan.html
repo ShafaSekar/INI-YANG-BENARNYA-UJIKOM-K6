@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monitoring Udara &amp; Tanah — Shafa Sekar Chandrayani</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style_gabungan.css">
+</head>
+<body>
+
+<div class="page">
+  <header>
+    <p class="eyebrow">monitoring lengkap punya</p>
+    <p class="brand">Shafa Sekar Chandrayani 🌷</p>
+    <h1>Udara &amp; Tanah</h1>
+    <p class="sub">DHT22 + Soil Moisture Sensor, dipantau bareng~</p>
+  </header>
+
+  <div class="status-banner" id="bubble">memuat hasil...</div>
+
+  <div class="cards">
+    <div class="card temp">
+      <p class="label">Suhu</p>
+      <p class="value"><span id="tempValue">--</span><span class="unit">°C</span></p>
+      <p class="note" id="tempNote">menunggu data</p>
+    </div>
+    <div class="card humid">
+      <p class="label">Kelembapan Udara</p>
+      <p class="value"><span id="humValue">--</span><span class="unit">%</span></p>
+      <p class="note" id="humNote">menunggu data</p>
+    </div>
+    <div class="card soil">
+      <p class="label">Kelembapan Tanah</p>
+      <p class="value"><span id="soilValue">--</span><span class="unit">%</span></p>
+      <div class="bar"><div class="fill" id="soilFill"></div></div>
+      <p class="note" id="soilNote">menunggu data</p>
+    </div>
+  </div>
+
+  <div class="outputs">
+    <div class="output">
+      <p class="out-label">Kipas Angin</p>
+      <span class="badge" id="fanStatus">--</span>
+    </div>
+    <div class="output">
+      <p class="out-label">Pompa Air</p>
+      <span class="badge" id="pumpStatus">--</span>
+    </div>
+  </div>
+
+  <footer>dibuat oleh <strong>Shafa Sekar Chandrayani</strong> · project DHT22 + Soil Moisture</footer>
+</div>
+
+<script src="script_gabungan.js"></script>
+</body>
+</html>
